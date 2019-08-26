@@ -1,0 +1,7 @@
+D:\La facu\Programacion-II\ejercicio\ejercicio 14\bin\Debug\ejercicio 14.exe.config
+D:\La facu\Programacion-II\ejercicio\ejercicio 14\bin\Debug\ejercicio 14.exe
+D:\La facu\Programacion-II\ejercicio\ejercicio 14\bin\Debug\ejercicio 14.pdb
+D:\La facu\Programacion-II\ejercicio\ejercicio 14\obj\Debug\ejercicio 14.csprojAssemblyReference.cache
+D:\La facu\Programacion-II\ejercicio\ejercicio 14\obj\Debug\ejercicio 14.csproj.CoreCompileInputs.cache
+D:\La facu\Programacion-II\ejercicio\ejercicio 14\obj\Debug\ejercicio 14.exe
+D:\La facu\Programacion-II\ejercicio\ejercicio 14\obj\Debug\ejercicio 14.pdb

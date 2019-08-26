@@ -4,3 +4,7 @@ D:\bg\ejercicio\Ejercicio 11\bin\Debug\Ejercicio 11.pdb
 D:\bg\ejercicio\Ejercicio 11\obj\Debug\Ejercicio 11.csproj.CoreCompileInputs.cache
 D:\bg\ejercicio\Ejercicio 11\obj\Debug\Ejercicio 11.exe
 D:\bg\ejercicio\Ejercicio 11\obj\Debug\Ejercicio 11.pdb
+D:\La facu\Programacion-II\ejercicio\Ejercicio 11\obj\Debug\Ejercicio 11.csprojAssemblyReference.cache
+D:\La facu\Programacion-II\ejercicio\Ejercicio 11\obj\Debug\Ejercicio 11.csproj.CoreCompileInputs.cache
+D:\La facu\Programacion-II\ejercicio\Ejercicio 11\obj\Debug\Ejercicio 11.exe
+D:\La facu\Programacion-II\ejercicio\Ejercicio 11\obj\Debug\Ejercicio 11.pdb
