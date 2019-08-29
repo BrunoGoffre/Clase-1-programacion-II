@@ -5,3 +5,10 @@ D:\La facu\Programacion-II\ejercicio\ejercicio 15\obj\Debug\ejercicio 15.csprojA
 D:\La facu\Programacion-II\ejercicio\ejercicio 15\obj\Debug\ejercicio 15.csproj.CoreCompileInputs.cache
 D:\La facu\Programacion-II\ejercicio\ejercicio 15\obj\Debug\ejercicio 15.exe
 D:\La facu\Programacion-II\ejercicio\ejercicio 15\obj\Debug\ejercicio 15.pdb
+D:\bg\Programacion-II\ejercicio\ejercicio 15\bin\Debug\ejercicio 15.exe.config
+D:\bg\Programacion-II\ejercicio\ejercicio 15\bin\Debug\ejercicio 15.exe
+D:\bg\Programacion-II\ejercicio\ejercicio 15\bin\Debug\ejercicio 15.pdb
+D:\bg\Programacion-II\ejercicio\ejercicio 15\obj\Debug\ejercicio 15.csprojAssemblyReference.cache
+D:\bg\Programacion-II\ejercicio\ejercicio 15\obj\Debug\ejercicio 15.csproj.CoreCompileInputs.cache
+D:\bg\Programacion-II\ejercicio\ejercicio 15\obj\Debug\ejercicio 15.exe
+D:\bg\Programacion-II\ejercicio\ejercicio 15\obj\Debug\ejercicio 15.pdb

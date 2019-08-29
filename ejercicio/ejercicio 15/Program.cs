@@ -16,42 +16,50 @@ namespace ejercicio_15
             string PrimeroStr = "";
             string SegundoStr = "";
             char Operacion = '0';
+           
 
+            
             Console.Write("Ingrese el calculo que desea hacer: ");
             Calculo = Console.ReadLine();
 
-            for (int i = 0; i < Calculo.Length; i++)
-            {
-                if (flag == 0 && (Calculo[i] != '+' && Calculo[i] != '-' && Calculo[i] != '/' && Calculo[i] != '*'))
+            
+                                  
+
+                for (int i = 0; i < Calculo.Length; i++)
                 {
-                    PrimeroStr = PrimeroStr + Calculo[i];
+                    if (flag == 0 && (Calculo[i] != '+' && Calculo[i] != '-' && Calculo[i] != '/' && Calculo[i] != '*'))
+                    {
+                        PrimeroStr = PrimeroStr + Calculo[i];
+                    }
+                    else if (flag == 1 && (Calculo[i] != '+' && Calculo[i] != '-' && Calculo[i] != '/' && Calculo[i] != '*'))
+                    {
+                        SegundoStr = SegundoStr + Calculo[i];
+                    }
+                    else
+                    {
+                        Operacion = Calculo[i];
+                        flag++;
+                    }
+
                 }
-                else if (flag == 1 && (Calculo[i] != '+' && Calculo[i] != '-' && Calculo[i] != '/' && Calculo[i] != '*'))
+
+                if (double.TryParse(PrimeroStr, out Primero))
                 {
-                    SegundoStr = SegundoStr + Calculo[i];
+                    if (double.TryParse(SegundoStr, out Segundo))
+                    {
+                        Resultado = Calculadora.Calcular(Primero, Segundo, Operacion);
+                    }
+
                 }
                 else
                 {
-                    Operacion = Calculo[i];
-                    flag++;
+                    Console.WriteLine("Error con los datos ingresados.");
                 }
-                
-            }
-
-            if (double.TryParse(PrimeroStr, out Primero))
-            {
-                if (double.TryParse(SegundoStr, out Segundo))
-                {
-                    Resultado = Calculadora.Calcular(Primero, Segundo, Operacion);
-                }
-                  
-            }
-            else
-            {
-                Console.WriteLine("Error con los datos ingresados.");
-            }
 
             
+
+
+
             Console.WriteLine($"Resultado: {Resultado}");
 
             /*Numeros = Calculo.Split(' ');
