@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Geometria
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Rectangulo pepe = new Rectangulo();
+            Rectangulo pepe2 = new Rectangulo();
+
+
+        }
+    }
+}
+
+namespace PruebaGeometria
+{
+
+}
+

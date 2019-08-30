@@ -1,0 +1,7 @@
+D:\bg\Programacion-II\ejercicio\Ejercicio 17\bin\Debug\Ejercicio 17.exe.config
+D:\bg\Programacion-II\ejercicio\Ejercicio 17\bin\Debug\Ejercicio 17.exe
+D:\bg\Programacion-II\ejercicio\Ejercicio 17\bin\Debug\Ejercicio 17.pdb
+D:\bg\Programacion-II\ejercicio\Ejercicio 17\obj\Debug\Ejercicio 17.csprojAssemblyReference.cache
+D:\bg\Programacion-II\ejercicio\Ejercicio 17\obj\Debug\Ejercicio 17.csproj.CoreCompileInputs.cache
+D:\bg\Programacion-II\ejercicio\Ejercicio 17\obj\Debug\Ejercicio 17.exe
+D:\bg\Programacion-II\ejercicio\Ejercicio 17\obj\Debug\Ejercicio 17.pdb
