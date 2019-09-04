@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,16 +9,22 @@ namespace Geometria
 {
     class Punto
     {
-        int x;
-        int y;
+        float x;
+        float y;
 
-        public int getx()
+        public float GetX()
         {
             return this.x;
         }
-        public int getY()
+        public float GetY()
         {
             return this.y;
+        }
+
+        public Punto (float x, float y)
+        {
+            this.x = x;
+            this.y = y;
         }
     }
 }
