@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio_Clase_5
+namespace Gomensai
 {
     class Program
     {
@@ -18,6 +18,7 @@ namespace Ejercicio_Clase_5
             Producto p3 = new Producto("Manaos", "MASDS51292", (float)20.5);
             Producto p4 = new Producto("Crush", "CRSDS54861", (float)10.75);
             // Agrego los productos al estante
+            
             if (estante + p1)
             {
                 Console.WriteLine("Agregó {0} {1} {2}", p1.GetMarca(), (string)p1, p1.GetPrecio());

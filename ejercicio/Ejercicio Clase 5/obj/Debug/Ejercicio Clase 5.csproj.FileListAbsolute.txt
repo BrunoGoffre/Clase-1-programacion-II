@@ -5,3 +5,10 @@ D:\bg\Programacion-II\ejercicio\Ejercicio Clase 5\obj\Debug\Ejercicio Clase 5.cs
 D:\bg\Programacion-II\ejercicio\Ejercicio Clase 5\obj\Debug\Ejercicio Clase 5.csproj.CoreCompileInputs.cache
 D:\bg\Programacion-II\ejercicio\Ejercicio Clase 5\obj\Debug\Ejercicio Clase 5.exe
 D:\bg\Programacion-II\ejercicio\Ejercicio Clase 5\obj\Debug\Ejercicio Clase 5.pdb
+D:\La facu\Programacion-II\ejercicio\Ejercicio Clase 5\bin\Debug\Ejercicio Clase 5.exe.config
+D:\La facu\Programacion-II\ejercicio\Ejercicio Clase 5\bin\Debug\Ejercicio Clase 5.exe
+D:\La facu\Programacion-II\ejercicio\Ejercicio Clase 5\bin\Debug\Ejercicio Clase 5.pdb
+D:\La facu\Programacion-II\ejercicio\Ejercicio Clase 5\obj\Debug\Ejercicio Clase 5.csprojAssemblyReference.cache
+D:\La facu\Programacion-II\ejercicio\Ejercicio Clase 5\obj\Debug\Ejercicio Clase 5.csproj.CoreCompileInputs.cache
+D:\La facu\Programacion-II\ejercicio\Ejercicio Clase 5\obj\Debug\Ejercicio Clase 5.exe
+D:\La facu\Programacion-II\ejercicio\Ejercicio Clase 5\obj\Debug\Ejercicio Clase 5.pdb

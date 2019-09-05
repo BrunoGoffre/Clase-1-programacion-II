@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio_Clase_5
+namespace Gomensai
 {
     public class Producto
     {
@@ -31,7 +31,8 @@ namespace Ejercicio_Clase_5
         
         public static string MostrarProducto(Producto x)
         {
-            string Str = $"{x.marca} Precio: {x.precio} su codigo de barra es: {x.CodigoDeBarra}";
+            
+            string Str = $"Marca: {x.marca} Precio: {x.precio} Codigo de barra: {x.CodigoDeBarra}";
             return Str;
         }
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio_Clase_5
+namespace Gomensai
 {
     class Estante
     {
@@ -28,10 +28,12 @@ namespace Ejercicio_Clase_5
         public static string MostrarEstante(Estante x)
         {
             StringBuilder Str = new StringBuilder();
-            Str.AppendFormat($"En ubicacion {x.ubicacionEstante}\n");
-            foreach (Producto X in x.productos)
+            //Str.AppendFormat($"En ubicacion {x.ubicacionEstante}\n");
+            Str.AppendFormat("En ubicacion: {0}\n", x.ubicacionEstante);
+            foreach (Producto producto in x.productos)
             {
-                Str.AppendFormat($"{X}\n");                  
+                Console.WriteLine($"{producto}");
+                Str.AppendFormat("{0}\n", producto);                  
             }
             
             return Str.ToString();
