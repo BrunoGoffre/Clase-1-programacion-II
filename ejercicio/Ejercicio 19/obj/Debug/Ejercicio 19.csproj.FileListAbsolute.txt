@@ -5,3 +5,10 @@ D:\La facu\Programacion-II\ejercicio\Ejercicio 19\obj\Debug\Ejercicio 19.csprojA
 D:\La facu\Programacion-II\ejercicio\Ejercicio 19\obj\Debug\Ejercicio 19.csproj.CoreCompileInputs.cache
 D:\La facu\Programacion-II\ejercicio\Ejercicio 19\obj\Debug\Ejercicio 19.exe
 D:\La facu\Programacion-II\ejercicio\Ejercicio 19\obj\Debug\Ejercicio 19.pdb
+D:\bg\Programacion-II\ejercicio\Ejercicio 19\bin\Debug\Ejercicio 19.exe.config
+D:\bg\Programacion-II\ejercicio\Ejercicio 19\bin\Debug\Ejercicio 19.exe
+D:\bg\Programacion-II\ejercicio\Ejercicio 19\bin\Debug\Ejercicio 19.pdb
+D:\bg\Programacion-II\ejercicio\Ejercicio 19\obj\Debug\Ejercicio 19.csprojAssemblyReference.cache
+D:\bg\Programacion-II\ejercicio\Ejercicio 19\obj\Debug\Ejercicio 19.csproj.CoreCompileInputs.cache
+D:\bg\Programacion-II\ejercicio\Ejercicio 19\obj\Debug\Ejercicio 19.exe
+D:\bg\Programacion-II\ejercicio\Ejercicio 19\obj\Debug\Ejercicio 19.pdb
