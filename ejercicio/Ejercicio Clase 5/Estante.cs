@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Gomensai
+namespace Clase_5
 {
     class Estante
     {
@@ -30,10 +30,12 @@ namespace Gomensai
             StringBuilder Str = new StringBuilder();
             //Str.AppendFormat($"En ubicacion {x.ubicacionEstante}\n");
             Str.AppendFormat("En ubicacion: {0}\n", x.ubicacionEstante);
+
+            Str.AppendFormat("En ubicacion: \n " +  x.ubicacionEstante + " asdads" + "dsdadsa" );
             foreach (Producto producto in x.productos)
             {
-                Console.WriteLine($"{producto}");
-                Str.AppendFormat("{0}\n", producto);                  
+                //Console.WriteLine($"{producto}");
+                Str.AppendFormat("{0}\n", Producto.MostrarProducto(producto));                  
             }
             
             return Str.ToString();
@@ -49,11 +51,8 @@ namespace Gomensai
                     if (X == Z.productos[i])
                     {
                         retorno = true;
-                    }
-                    else
-                    {
-                        retorno = false;
-                    }
+                        break;
+                    }                    
                 }
             }          
             
@@ -70,7 +69,7 @@ namespace Gomensai
             bool retorno = false;
             if (!(z is null) && !(x is null))
             {
-                if (x != z)
+                if (!(x == z))
                 {
                     for (int i = 0; i < z.productos.Length; i++)
                     {
@@ -78,6 +77,7 @@ namespace Gomensai
                         {
                             z.productos[i] = x;
                             retorno = true;
+                            break;
                         }
                     }
                 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Gomensai
+namespace Clase_5
 {
     public class Producto
     {
@@ -63,26 +63,42 @@ namespace Gomensai
 
         public static bool operator !=(Producto A, Producto B)
         {
-            if (!(A == B))
+            if (!(A is null) && !(B is null))
             {
-                return true;
+                if (!(A == B))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {
                 return false;
             }
+                
         }
 
         public static bool operator ==(Producto A, string Str)
         {
-           if (A.marca == Str)
+            if (!(A is null))
             {
-                return true;
+                if (A.marca == Str) 
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
-           else
+            else
             {
                 return false;
             }
+                
         }
 
         public static bool operator !=(Producto A, string Str)
