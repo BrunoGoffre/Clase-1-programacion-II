@@ -9,7 +9,7 @@ namespace Ejercicio_20
     class Dolar
     {
         double cantidad;
-        public static double cotizRespectoDolar;
+        static double cotizRespectoDolar;
 
         static Dolar()
         {
@@ -35,7 +35,13 @@ namespace Ejercicio_20
             
         public static explicit operator Euro(Dolar a)
         {
-            return (Euro.cotizRespectoDolar * a.cantidad);
+            Euro aux = new Euro(a.getCantidad() * Euro.GetCotizacion());
+            return aux;
+        }
+        public static explicit operator Peso(Dolar a)
+        {
+            Peso aux = new Peso(a.getCantidad() * Peso.getCotizacion());
+            return aux;
         }
         public static implicit operator Dolar(double a)
         {
@@ -43,25 +49,77 @@ namespace Ejercicio_20
             return aux;
         }
 
-       /* public static explicit operator Euro(Dolar a)
+        public static Dolar operator +(Dolar a, Dolar b)
         {
-
-        }*/
-        /*public static Dolar operator +(Dolar a, Euro b)
-        {
-            Dolar resultado;
-            valor.cantidad = (Dolar.cotizRespectoDolar * a.cantidad) + (Euro.cotizRespectoDolar * b.cantidad) ;
-            return valor;
+            return (a.getCantidad() + b.getCantidad());
         }
+        
+        public static Dolar operator +(Dolar a, Euro b)
+        {
+            return (a + (Dolar)b);
+        }
+
+        public static Dolar operator +(Dolar a, Peso b)
+        {
+            return (a + (Dolar)b);
+        }
+
+        public static Dolar operator -(Dolar a, Dolar b)
+        {
+            return (a.getCantidad() - b.getCantidad());
+        }
+
         public static Dolar operator -(Dolar a, Euro b)
         {
-            Dolar resultado;
-            valor.cantidad = (Dolar.cotizRespectoDolar * a.cantidad) - (Euro.cotizRespectoDolar * b.cantidad);
-            return valor;
+            return (a - (Dolar)b);
         }
-        public static Dolar operator ==(Dolar a, Euro b)
+
+        public static Dolar operator -(Dolar a, Peso b)
         {
-            if (!(a is null))
-        }*/
+            return (a - (Dolar)b);
+        }
+
+        public static bool operator ==(Dolar a, Peso b)
+        {
+            bool retorno = false;
+            if (a.getCantidad() == b.getCantidad())
+            {
+                retorno = true;
+            }
+            return retorno;
+        }
+        public static bool operator ==(Dolar a, Euro b)
+        {
+
+            bool retorno = false;
+            if (a.getCantidad() == b.GetCantidad())
+            {
+                retorno = true;
+            }
+            return retorno;
+        }
+        public static bool operator !=(Dolar a, Peso b)
+        {
+            return !(a == b);
+        }
+        public static bool operator != (Dolar a, Euro b)
+        {
+            return !(a == b);
+        }
+
+        public static bool operator ==(Dolar a, Dolar b)
+        {
+            bool retorno = false;
+            if (a.getCantidad() == b.getCantidad())
+            {
+                retorno = true;
+            }
+            return retorno;
+        }
+
+        public static bool operator !=(Dolar a, Dolar b)
+        {
+            return !(a == b);
+        }
     }
 }
