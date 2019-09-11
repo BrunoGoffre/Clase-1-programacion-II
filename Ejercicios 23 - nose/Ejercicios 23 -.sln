@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicios 23 -", "Ejercicios 23 -\Ejercicios 23 -.csproj", "{FB8291B1-A0E3-4239-8E9C-517208335688}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moneda", "Biblioteca\Moneda.csproj", "{4F64C73F-7CE6-480F-BE47-B577AEA2AF85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB8291B1-A0E3-4239-8E9C-517208335688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB8291B1-A0E3-4239-8E9C-517208335688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB8291B1-A0E3-4239-8E9C-517208335688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB8291B1-A0E3-4239-8E9C-517208335688}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F64C73F-7CE6-480F-BE47-B577AEA2AF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F64C73F-7CE6-480F-BE47-B577AEA2AF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F64C73F-7CE6-480F-BE47-B577AEA2AF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F64C73F-7CE6-480F-BE47-B577AEA2AF85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E2132AC-EA0F-4E2C-8C35-903F86F86FDE}
+	EndGlobalSection
+EndGlobal

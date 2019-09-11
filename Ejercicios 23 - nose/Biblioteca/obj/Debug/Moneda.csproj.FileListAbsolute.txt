@@ -1,0 +1,6 @@
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Biblioteca\bin\Debug\Biblioteca.dll
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Biblioteca\bin\Debug\Biblioteca.pdb
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Biblioteca\obj\Debug\Moneda.csprojAssemblyReference.cache
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Biblioteca\obj\Debug\Moneda.csproj.CoreCompileInputs.cache
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Biblioteca\obj\Debug\Biblioteca.dll
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Biblioteca\obj\Debug\Biblioteca.pdb

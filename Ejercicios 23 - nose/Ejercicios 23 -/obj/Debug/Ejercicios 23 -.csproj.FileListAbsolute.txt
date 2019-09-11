@@ -1,0 +1,16 @@
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Ejercicios 23 -\bin\Debug\Ejercicios 23 -.exe.config
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Ejercicios 23 -\bin\Debug\Ejercicios 23 -.exe
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Ejercicios 23 -\bin\Debug\Ejercicios 23 -.pdb
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Ejercicios 23 -\bin\Debug\Biblioteca.dll
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Ejercicios 23 -\bin\Debug\Biblioteca.pdb
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Ejercicios 23 -\obj\Debug\Ejercicios 23 -.csprojAssemblyReference.cache
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Ejercicios 23 -\obj\Debug\Ejercicios_23__.Properties.Resources.resources
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Ejercicios 23 -\obj\Debug\Ejercicios 23 -.csproj.GenerateResource.cache
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Ejercicios 23 -\obj\Debug\Ejercicios 23 -.csproj.CoreCompileInputs.cache
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Ejercicios 23 -\obj\Debug\Ejercicios 23 -.csproj.CopyComplete
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Ejercicios 23 -\obj\Debug\Ejercicios 23 -.exe
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Ejercicios 23 -\obj\Debug\Ejercicios 23 -.pdb
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Ejercicios 23 -\bin\Debug\es\Ejercicios 23 -.resources.dll
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Ejercicios 23 -\obj\Debug\es\Ejercicios 23 -.resources.dll
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Ejercicios 23 -\obj\Debug\Ejercicios_23_.Form1.resources
+C:\Users\Bruno\source\repos\Ejercicios 23 -\Ejercicios 23 -\obj\Debug\Ejercicios_23_.Form1.es.resources
