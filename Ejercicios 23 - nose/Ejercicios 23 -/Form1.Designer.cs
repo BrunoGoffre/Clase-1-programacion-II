@@ -62,6 +62,8 @@
             // 
             // label1
             // 
+            this.label1.AllowDrop = true;
+            this.label1.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(82, 31);
             this.label1.Name = "label1";
@@ -71,6 +73,8 @@
             // 
             // txtCotizacionEuro
             // 
+            this.txtCotizacionEuro.AllowDrop = true;
+            this.txtCotizacionEuro.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtCotizacionEuro.Location = new System.Drawing.Point(299, 38);
             this.txtCotizacionEuro.Name = "txtCotizacionEuro";
             this.txtCotizacionEuro.Size = new System.Drawing.Size(100, 20);
@@ -80,6 +84,8 @@
             // 
             // txtCotizacionDolar
             // 
+            this.txtCotizacionDolar.AllowDrop = true;
+            this.txtCotizacionDolar.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtCotizacionDolar.Location = new System.Drawing.Point(405, 38);
             this.txtCotizacionDolar.Name = "txtCotizacionDolar";
             this.txtCotizacionDolar.Size = new System.Drawing.Size(100, 20);
@@ -88,6 +94,8 @@
             // 
             // txtCotizacionPeso
             // 
+            this.txtCotizacionPeso.AllowDrop = true;
+            this.txtCotizacionPeso.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtCotizacionPeso.Location = new System.Drawing.Point(522, 38);
             this.txtCotizacionPeso.Name = "txtCotizacionPeso";
             this.txtCotizacionPeso.Size = new System.Drawing.Size(100, 20);
@@ -96,6 +104,8 @@
             // 
             // txtConverEuro
             // 
+            this.txtConverEuro.AllowDrop = true;
+            this.txtConverEuro.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtConverEuro.Location = new System.Drawing.Point(87, 114);
             this.txtConverEuro.Name = "txtConverEuro";
             this.txtConverEuro.Size = new System.Drawing.Size(100, 20);
@@ -104,23 +114,29 @@
             // 
             // txtConverDolar
             // 
+            this.txtConverDolar.AllowDrop = true;
+            this.txtConverDolar.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtConverDolar.Location = new System.Drawing.Point(87, 145);
             this.txtConverDolar.Name = "txtConverDolar";
             this.txtConverDolar.Size = new System.Drawing.Size(100, 20);
-            this.txtConverDolar.TabIndex = 10;
+            this.txtConverDolar.TabIndex = 8;
             this.txtConverDolar.Leave += new System.EventHandler(this.txtConverDolar_Leave);
             // 
             // txtConverPeso
             // 
+            this.txtConverPeso.AllowDrop = true;
+            this.txtConverPeso.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtConverPeso.Location = new System.Drawing.Point(87, 168);
             this.txtConverPeso.Name = "txtConverPeso";
             this.txtConverPeso.Size = new System.Drawing.Size(100, 20);
-            this.txtConverPeso.TabIndex = 8;
+            this.txtConverPeso.TabIndex = 10;
             this.txtConverPeso.Leave += new System.EventHandler(this.txtConverPeso_Leave);
             // 
             // label2
             // 
+            this.label2.AllowDrop = true;
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(23, 112);
             this.label2.Name = "label2";
@@ -131,7 +147,9 @@
             // 
             // label3
             // 
+            this.label3.AllowDrop = true;
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(23, 143);
             this.label3.Name = "label3";
@@ -142,7 +160,9 @@
             // 
             // label4
             // 
+            this.label4.AllowDrop = true;
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(23, 168);
             this.label4.Name = "label4";
@@ -153,7 +173,9 @@
             // 
             // label5
             // 
+            this.label5.AllowDrop = true;
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(310, 83);
             this.label5.Name = "label5";
@@ -163,7 +185,9 @@
             // 
             // label6
             // 
+            this.label6.AllowDrop = true;
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(426, 83);
             this.label6.Name = "label6";
@@ -173,7 +197,9 @@
             // 
             // label7
             // 
+            this.label7.AllowDrop = true;
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(542, 83);
             this.label7.Name = "label7";
@@ -183,6 +209,8 @@
             // 
             // textBox7
             // 
+            this.textBox7.AllowDrop = true;
+            this.textBox7.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox7.Location = new System.Drawing.Point(288, 116);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
@@ -191,6 +219,8 @@
             // 
             // textBox8
             // 
+            this.textBox8.AllowDrop = true;
+            this.textBox8.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox8.Location = new System.Drawing.Point(405, 115);
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
@@ -199,6 +229,8 @@
             // 
             // textBox9
             // 
+            this.textBox9.AllowDrop = true;
+            this.textBox9.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox9.Location = new System.Drawing.Point(522, 114);
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
@@ -208,6 +240,8 @@
             // 
             // textBox10
             // 
+            this.textBox10.AllowDrop = true;
+            this.textBox10.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox10.Location = new System.Drawing.Point(288, 142);
             this.textBox10.Name = "textBox10";
             this.textBox10.ReadOnly = true;
@@ -216,6 +250,8 @@
             // 
             // textBox11
             // 
+            this.textBox11.AllowDrop = true;
+            this.textBox11.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox11.Location = new System.Drawing.Point(405, 142);
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
@@ -224,6 +260,8 @@
             // 
             // textBox12
             // 
+            this.textBox12.AllowDrop = true;
+            this.textBox12.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox12.Location = new System.Drawing.Point(522, 143);
             this.textBox12.Name = "textBox12";
@@ -234,6 +272,8 @@
             // 
             // textBox13
             // 
+            this.textBox13.AllowDrop = true;
+            this.textBox13.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox13.Location = new System.Drawing.Point(288, 168);
             this.textBox13.Name = "textBox13";
             this.textBox13.ReadOnly = true;
@@ -242,6 +282,8 @@
             // 
             // textBox14
             // 
+            this.textBox14.AllowDrop = true;
+            this.textBox14.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox14.Location = new System.Drawing.Point(405, 168);
             this.textBox14.Name = "textBox14";
             this.textBox14.ReadOnly = true;
@@ -250,6 +292,8 @@
             // 
             // textBox15
             // 
+            this.textBox15.AllowDrop = true;
+            this.textBox15.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.textBox15.Location = new System.Drawing.Point(522, 168);
             this.textBox15.Name = "textBox15";
             this.textBox15.ReadOnly = true;
@@ -259,6 +303,8 @@
             // 
             // buttonConverEuro
             // 
+            this.buttonConverEuro.AllowDrop = true;
+            this.buttonConverEuro.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.buttonConverEuro.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.buttonConverEuro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonConverEuro.Location = new System.Drawing.Point(205, 114);
@@ -266,52 +312,60 @@
             this.buttonConverEuro.Size = new System.Drawing.Size(66, 23);
             this.buttonConverEuro.TabIndex = 7;
             this.buttonConverEuro.Text = "->";
-            this.buttonConverEuro.UseVisualStyleBackColor = true;
+            this.buttonConverEuro.UseVisualStyleBackColor = false;
             this.buttonConverEuro.Click += new System.EventHandler(this.BtnEuro_click);
             // 
             // buttonConverDolar
             // 
+            this.buttonConverDolar.AllowDrop = true;
+            this.buttonConverDolar.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.buttonConverDolar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonConverDolar.Location = new System.Drawing.Point(205, 140);
             this.buttonConverDolar.Name = "buttonConverDolar";
             this.buttonConverDolar.Size = new System.Drawing.Size(66, 23);
             this.buttonConverDolar.TabIndex = 9;
             this.buttonConverDolar.Text = "->";
-            this.buttonConverDolar.UseVisualStyleBackColor = true;
+            this.buttonConverDolar.UseVisualStyleBackColor = false;
             this.buttonConverDolar.Click += new System.EventHandler(this.buttonConverDolar_Click);
             // 
             // buttonConverPeso
             // 
+            this.buttonConverPeso.AllowDrop = true;
+            this.buttonConverPeso.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.buttonConverPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonConverPeso.Location = new System.Drawing.Point(205, 168);
             this.buttonConverPeso.Name = "buttonConverPeso";
             this.buttonConverPeso.Size = new System.Drawing.Size(66, 23);
             this.buttonConverPeso.TabIndex = 11;
             this.buttonConverPeso.Text = "->";
-            this.buttonConverPeso.UseVisualStyleBackColor = true;
+            this.buttonConverPeso.UseVisualStyleBackColor = false;
             this.buttonConverPeso.Click += new System.EventHandler(this.buttonConverPeso_Click);
             // 
             // Candado
             // 
             this.Candado.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Candado.ImageStream")));
             this.Candado.TransparentColor = System.Drawing.Color.Transparent;
-            this.Candado.Images.SetKeyName(0, "Candado abierto.png");
-            this.Candado.Images.SetKeyName(1, "Candado cerrado.jpg");
+            this.Candado.Images.SetKeyName(0, "candado-abierto-y-cerrado-63300523.jpg");
+            this.Candado.Images.SetKeyName(1, "sdsd.jpg");
             // 
             // button4
             // 
+            this.button4.AllowDrop = true;
+            this.button4.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.button4.ImageIndex = 0;
             this.button4.ImageList = this.Candado;
             this.button4.Location = new System.Drawing.Point(197, 20);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(74, 53);
             this.button4.TabIndex = 5;
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.Button4_click);
             // 
             // label8
             // 
+            this.label8.AllowDrop = true;
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(370, 15);
             this.label8.Name = "label8";
@@ -325,7 +379,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(681, 221);
+            this.BackgroundImage = global::Ejercicios_23__.Properties.Resources.Yasuo_1112598768_55084_1440x600;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(681, 224);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.buttonConverPeso);
@@ -369,20 +425,20 @@
         }
 
         #endregion
-
+        private System.Windows.Forms.ImageList Candado;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtCotizacionEuro;
         private System.Windows.Forms.TextBox txtCotizacionDolar;
         private System.Windows.Forms.TextBox txtCotizacionPeso;
         private System.Windows.Forms.TextBox txtConverEuro;
         private System.Windows.Forms.TextBox txtConverDolar;
         private System.Windows.Forms.TextBox txtConverPeso;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
@@ -395,7 +451,6 @@
         private System.Windows.Forms.Button buttonConverEuro;
         private System.Windows.Forms.Button buttonConverDolar;
         private System.Windows.Forms.Button buttonConverPeso;
-        private System.Windows.Forms.ImageList Candado;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label8;
     }

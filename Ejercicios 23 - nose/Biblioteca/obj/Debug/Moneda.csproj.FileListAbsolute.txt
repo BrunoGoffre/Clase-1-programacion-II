@@ -4,3 +4,9 @@ C:\Users\Bruno\source\repos\Ejercicios 23 -\Biblioteca\obj\Debug\Moneda.csprojAs
 C:\Users\Bruno\source\repos\Ejercicios 23 -\Biblioteca\obj\Debug\Moneda.csproj.CoreCompileInputs.cache
 C:\Users\Bruno\source\repos\Ejercicios 23 -\Biblioteca\obj\Debug\Biblioteca.dll
 C:\Users\Bruno\source\repos\Ejercicios 23 -\Biblioteca\obj\Debug\Biblioteca.pdb
+D:\bg\Programacion-II\Ejercicios 23 - nose\Biblioteca\bin\Debug\Biblioteca.dll
+D:\bg\Programacion-II\Ejercicios 23 - nose\Biblioteca\bin\Debug\Biblioteca.pdb
+D:\bg\Programacion-II\Ejercicios 23 - nose\Biblioteca\obj\Debug\Moneda.csprojAssemblyReference.cache
+D:\bg\Programacion-II\Ejercicios 23 - nose\Biblioteca\obj\Debug\Moneda.csproj.CoreCompileInputs.cache
+D:\bg\Programacion-II\Ejercicios 23 - nose\Biblioteca\obj\Debug\Biblioteca.dll
+D:\bg\Programacion-II\Ejercicios 23 - nose\Biblioteca\obj\Debug\Biblioteca.pdb
