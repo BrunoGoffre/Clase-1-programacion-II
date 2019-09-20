@@ -34,12 +34,7 @@ namespace CentralitaHerencia
 
         public static int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2)
         {
-            int retorno = 0;
-            if (llamada1.Duracion > llamada2.duracion)
-            {
-                retorno = 1;
-            }
-            return retorno;
+            return llamada1.Duracion.CompareTo(llamada2.Duracion);
         }
 
         public string mostrar()
