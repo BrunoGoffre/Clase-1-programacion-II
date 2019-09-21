@@ -33,8 +33,9 @@ namespace CentralitaHerencia
         public string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat($"Duracion llamada:{this.Duracion}\n" +
-                $" Numero de Origen:{this.NroDestino} Destinatario:{this.NroOrigen} Costo: {CalcularCosto()} Franja horaria: {this.CostoLlamada}");
+            sb.AppendFormat($"\n Duracion llamada: {this.Duracion}" +
+                $" Numero de Origen: {this.NroDestino} Destinatario: {this.NroOrigen}" +
+                $" Costo: {CalcularCosto()} Franja horaria: {this.CostoLlamada}");
             return sb.ToString();
         }
 
