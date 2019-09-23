@@ -10,7 +10,7 @@ namespace Ejercicio_26
     {
         static void Main(string[] args)
         {
-            int[20] numeros;
+            
         }
     }
 }
