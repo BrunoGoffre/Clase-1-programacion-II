@@ -13,11 +13,22 @@ namespace Central
 {
     public partial class Form1 : Form
     {
-        Centralita c = new Centralita("Bruno center");
+        Centralita c;
 
         public Form1()
         {
-            InitializeComponent();             
+            InitializeComponent();  
+            this.c = new Centralita("Telefonica");
+        }
+
+        private void ButtonGenerarLlamada_Click(object sender, EventArgs e)
+        {
+            new FormLlamador(c).ShowDialog();
+        }
+
+        private void ButtonSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

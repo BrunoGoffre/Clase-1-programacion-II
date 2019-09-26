@@ -33,7 +33,7 @@ namespace CentralitaHerencia
         protected string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendFormat(mostrar() + $" Costo de llamada: {this.CostoLlamada} " +
+            sb.AppendFormat(base.mostrar() + $" Costo de llamada: {this.CostoLlamada} " +
                 $"Franja: {this.franjaHoraria}\n");
             return sb.ToString();
         }

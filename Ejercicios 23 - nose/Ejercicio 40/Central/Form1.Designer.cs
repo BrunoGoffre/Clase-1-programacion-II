@@ -43,6 +43,7 @@
             this.ButtonGenerarLlamada.TabIndex = 0;
             this.ButtonGenerarLlamada.Text = "Generar llamada";
             this.ButtonGenerarLlamada.UseVisualStyleBackColor = true;
+            this.ButtonGenerarLlamada.Click += new System.EventHandler(this.ButtonGenerarLlamada_Click);
             // 
             // ButtonFacturacionTotal
             // 
@@ -79,6 +80,7 @@
             this.ButtonSalir.TabIndex = 4;
             this.ButtonSalir.Text = "Salir";
             this.ButtonSalir.UseVisualStyleBackColor = true;
+            this.ButtonSalir.Click += new System.EventHandler(this.ButtonSalir_Click);
             // 
             // Form1
             // 
