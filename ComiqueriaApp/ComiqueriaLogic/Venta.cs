@@ -34,7 +34,7 @@ namespace ComiqueriaLogic
     }
     public string ObtenerDescrpcionBreve()
     {
-      return $"{this.fecha} - {producto.Descripcion} - {this.precioFinal:00}";
+      return $"{this.fecha} - {producto.Descripcion} - ${this.precioFinal:#.00}";
     }
     internal DateTime Fecha
     {

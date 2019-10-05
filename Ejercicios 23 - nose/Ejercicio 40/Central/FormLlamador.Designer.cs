@@ -160,7 +160,6 @@
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Panel";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // buttonNumeral
             // 
@@ -214,10 +213,13 @@
             // 
             // textBoxNroOrigen
             // 
-            this.textBoxNroOrigen.Location = new System.Drawing.Point(218, 195);
+            this.textBoxNroOrigen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNroOrigen.Location = new System.Drawing.Point(218, 186);
             this.textBoxNroOrigen.Name = "textBoxNroOrigen";
-            this.textBoxNroOrigen.Size = new System.Drawing.Size(118, 20);
+            this.textBoxNroOrigen.Size = new System.Drawing.Size(118, 32);
             this.textBoxNroOrigen.TabIndex = 12;
+            this.textBoxNroOrigen.Text = "Nro Origen";
+            this.textBoxNroOrigen.Enter += new System.EventHandler(this.textBoxNroOrigen_Enter);
             // 
             // buttonSalir
             // 
@@ -247,11 +249,13 @@
             this.textBoxNroDestino.Size = new System.Drawing.Size(324, 32);
             this.textBoxNroDestino.TabIndex = 15;
             this.textBoxNroDestino.Text = "Nro Destino";
+            this.textBoxNroDestino.Enter += new System.EventHandler(this.textBoxNroDestino_Enter);
             // 
             // FormLlamador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(348, 340);
             this.Controls.Add(this.textBoxNroDestino);
             this.Controls.Add(this.ComboBoxFranjas);
@@ -261,6 +265,7 @@
             this.Controls.Add(this.buttonLimpiar);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormLlamador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLlamador";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

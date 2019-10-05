@@ -53,6 +53,7 @@
             this.ButtonFacturacionTotal.TabIndex = 1;
             this.ButtonFacturacionTotal.Text = "Facturacion total";
             this.ButtonFacturacionTotal.UseVisualStyleBackColor = true;
+            this.ButtonFacturacionTotal.Click += new System.EventHandler(this.ButtonFacturacionTotal_Click);
             // 
             // ButtonFacturacionLocal
             // 
@@ -62,6 +63,7 @@
             this.ButtonFacturacionLocal.TabIndex = 2;
             this.ButtonFacturacionLocal.Text = "Facturacion local";
             this.ButtonFacturacionLocal.UseVisualStyleBackColor = true;
+            this.ButtonFacturacionLocal.Click += new System.EventHandler(this.ButtonFacturacionLocal_Click);
             // 
             // ButtonFacturacionProvincial
             // 
@@ -71,6 +73,7 @@
             this.ButtonFacturacionProvincial.TabIndex = 3;
             this.ButtonFacturacionProvincial.Text = "Facturacion provincial";
             this.ButtonFacturacionProvincial.UseVisualStyleBackColor = true;
+            this.ButtonFacturacionProvincial.Click += new System.EventHandler(this.ButtonFacturacionProvincial_Click);
             // 
             // ButtonSalir
             // 
@@ -86,6 +89,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(317, 450);
             this.Controls.Add(this.ButtonSalir);
             this.Controls.Add(this.ButtonFacturacionProvincial);
@@ -93,6 +97,7 @@
             this.Controls.Add(this.ButtonFacturacionTotal);
             this.Controls.Add(this.ButtonGenerarLlamada);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
 

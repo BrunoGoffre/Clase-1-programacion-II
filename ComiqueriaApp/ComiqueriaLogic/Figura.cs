@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ComiqueriaLogic
 {
-  class Figura : Producto
+  public class Figura : Producto
   {
     double altura;
 
@@ -14,7 +14,7 @@ namespace ComiqueriaLogic
     {
       this.altura = altura;
     }
-    public Figura (double altura, int stock, double precio) : this ($"Figura {altura} cm",stock,precio,altura)
+    public Figura (int stock, double precio, double altura) : this ($"Figura {altura} cm",stock,precio,altura)
     {
 
     }    

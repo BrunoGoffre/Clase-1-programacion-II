@@ -13,7 +13,7 @@ namespace Central
     public partial class FormLlamador : Form
     {
         Centralita c;
-        System.Windows.Forms.TextBox txtBoxFinal;
+        System.Windows.Forms.TextBox txtBoxFinal;        
 
         public FormLlamador(Centralita c)
         {
@@ -21,19 +21,39 @@ namespace Central
             this.c = c;
             ComboBoxFranjas.DataSource = Enum.GetValues(typeof(Provincial.Franja));
             ComboBoxFranjas.Enabled = false;
-            txtBoxFinal = textBoxNroDestino;
+            txtBoxFinal = textBoxNroDestino;            
         }
+
+        public Centralita GetCentralita
+        {
+            get { return c; }
+        }
+
 
         public void TableroNumerico(System.Windows.Forms.TextBox txtBoxFinal, string numero)
         {
-            if (textBoxNroDestino.Text == "Nro Destino" || textBoxNroOrigen.Text == "Nro Origen")
+            
+            if (txtBoxFinal.Text == "Nro Destino" || txtBoxFinal.Text == "Nro Origen")
             {
                 txtBoxFinal.Text = numero;
+                if (txtBoxFinal == textBoxNroDestino && txtBoxFinal.Text[0] == '#')
+                {
+                    ComboBoxFranjas.Enabled = true;
+                }
             }
             else
             {
                 txtBoxFinal.Text += numero;
             }
+        }
+        
+        private void textBoxNroOrigen_Enter(object sender, EventArgs e)
+        {
+            txtBoxFinal = textBoxNroOrigen;
+        }
+        private void textBoxNroDestino_Enter(object sender, EventArgs e)
+        {
+            txtBoxFinal = textBoxNroDestino;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -50,12 +70,7 @@ namespace Central
         {
             TableroNumerico(txtBoxFinal, "3");
         }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void ButtonLimpiar_Click(object sender, EventArgs e)
         {
             textBoxNroDestino.Text = "Nro Destino";
@@ -112,18 +127,21 @@ namespace Central
         {
             TableroNumerico(txtBoxFinal, "#");
         }
-              
-
-        private void textBoxNroDestino_TextChanged(object sender, EventArgs e)
-        {
-            if (textBoxNroDestino.Text == "#")
-            {
-                ComboBoxFranjas.Enabled = true;
-            }
-        }
 
         private void buttonLlamar_Click(object sender, EventArgs e)
         {
+            Random numero = new Random();
+            Provincial.Franja franja;
+            Enum.TryParse<Provincial.Franja>(ComboBoxFranjas.SelectedValue.ToString(), out franja);
+
+            if (ComboBoxFranjas.Enabled == true)
+            {
+                c += new Provincial(textBoxNroOrigen.Text,franja ,numero.Next(1,50),textBoxNroDestino.Text );
+            }
+            else
+            {
+                c += new Local(textBoxNroDestino.Text, numero.Next(1, 50), textBoxNroOrigen.Text, (numero.Next(5,56)/10));
+            }
             
         }
     }

@@ -30,5 +30,23 @@ namespace Central
         {
             Close();
         }
+              
+
+        private void ButtonFacturacionTotal_Click(object sender, EventArgs e)
+        {
+            new FormMostrar(c, Llamada.TipoLlamada.Todas).ShowDialog();            
+        }
+
+        private void ButtonFacturacionLocal_Click(object sender, EventArgs e)
+        {
+            new FormMostrar(c, Llamada.TipoLlamada.Local).ShowDialog();
+        }
+
+        private void ButtonFacturacionProvincial_Click(object sender, EventArgs e)
+        {
+            new FormMostrar(c, Llamada.TipoLlamada.Provincial).ShowDialog();
+        }
+
+
     }
 }
