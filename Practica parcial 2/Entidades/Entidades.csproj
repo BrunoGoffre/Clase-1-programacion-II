@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ADC69AE2-094B-4DCC-A749-725E215A33BC}</ProjectGuid>
+    <ProjectGuid>{5AE3A60C-A15C-4E96-BEF2-91B440A60903}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ComiqueriaLogic</RootNamespace>
-    <AssemblyName>ComiqueriaLogic</AssemblyName>
+    <RootNamespace>Entidades</RootNamespace>
+    <AssemblyName>Entidades</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,14 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Comprobante.cs" />
-    <Compile Include="Comic.cs" />
-    <Compile Include="Comiqueria.cs" />
-    <Compile Include="Factura.cs" />
-    <Compile Include="Figura.cs" />
-    <Compile Include="Producto.cs" />
+    <Compile Include="Astro.cs" />
+    <Compile Include="Planeta.cs" />
+    <Compile Include="Satelite.cs" />
+    <Compile Include="SistemaSolar.cs" />
+    <Compile Include="Tipo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Venta.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
