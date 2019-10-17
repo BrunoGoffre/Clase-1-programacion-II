@@ -1,7 +1,0 @@
-D:\La facu\Programacion-II\ejercicio\ejercicio13\bin\Debug\ejercicio13.exe.config
-D:\La facu\Programacion-II\ejercicio\ejercicio13\bin\Debug\ejercicio13.exe
-D:\La facu\Programacion-II\ejercicio\ejercicio13\bin\Debug\ejercicio13.pdb
-D:\La facu\Programacion-II\ejercicio\ejercicio13\obj\Debug\ejercicio13.csproj.CoreCompileInputs.cache
-D:\La facu\Programacion-II\ejercicio\ejercicio13\obj\Debug\ejercicio13.exe
-D:\La facu\Programacion-II\ejercicio\ejercicio13\obj\Debug\ejercicio13.pdb
-D:\La facu\Programacion-II\ejercicio\ejercicio13\obj\Debug\ejercicio13.csprojAssemblyReference.cache

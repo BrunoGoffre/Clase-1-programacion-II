@@ -1,7 +1,0 @@
-D:\bg\Programacion-II\ejercicio\Pruebas\obj\Debug\Pruebas.csprojAssemblyReference.cache
-D:\bg\Programacion-II\ejercicio\Pruebas\obj\Debug\Pruebas.csproj.CoreCompileInputs.cache
-D:\bg\Programacion-II\ejercicio\Pruebas\bin\Debug\Pruebas.exe.config
-D:\bg\Programacion-II\ejercicio\Pruebas\bin\Debug\Pruebas.exe
-D:\bg\Programacion-II\ejercicio\Pruebas\bin\Debug\Pruebas.pdb
-D:\bg\Programacion-II\ejercicio\Pruebas\obj\Debug\Pruebas.exe
-D:\bg\Programacion-II\ejercicio\Pruebas\obj\Debug\Pruebas.pdb

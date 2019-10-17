@@ -1,7 +1,0 @@
-D:\La facu\Programacion-II\ejercicio\ConsoleApp1\bin\Debug\Ejercicio 20.exe.config
-D:\La facu\Programacion-II\ejercicio\ConsoleApp1\bin\Debug\Ejercicio 20.exe
-D:\La facu\Programacion-II\ejercicio\ConsoleApp1\bin\Debug\Ejercicio 20.pdb
-D:\La facu\Programacion-II\ejercicio\ConsoleApp1\obj\Debug\Ejercicio 20.csprojAssemblyReference.cache
-D:\La facu\Programacion-II\ejercicio\ConsoleApp1\obj\Debug\Ejercicio 20.csproj.CoreCompileInputs.cache
-D:\La facu\Programacion-II\ejercicio\ConsoleApp1\obj\Debug\Ejercicio 20.exe
-D:\La facu\Programacion-II\ejercicio\ConsoleApp1\obj\Debug\Ejercicio 20.pdb
