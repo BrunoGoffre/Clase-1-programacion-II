@@ -16,7 +16,7 @@ namespace CentralitaHerencia
         {
             llamadas = new List<Llamada>();
         }
-        public Centralita(string nombreEmpresa) : this ()
+        public Centralita(string nombreEmpresa) : this()
         {
             this.razonSocial = nombreEmpresa;
         }
@@ -44,7 +44,7 @@ namespace CentralitaHerencia
 
             foreach (Llamada item in llamadas)
             {
-                if ((tipo == Llamada.TipoLlamada.Todas || tipo == Llamada.TipoLlamada.Provincial) && item is Provincial) 
+                if ((tipo == Llamada.TipoLlamada.Todas || tipo == Llamada.TipoLlamada.Provincial) && item is Provincial)
                 {
                     retorno += ((Provincial)item).CostoLlamada;
                 }
@@ -53,7 +53,7 @@ namespace CentralitaHerencia
                     retorno += ((Local)item).CostoLlamada;
                 }
             }
-            
+
             return retorno;
         }
 
@@ -95,7 +95,7 @@ namespace CentralitaHerencia
         public static bool operator ==(Centralita c, Llamada llamada)
         {
             bool retorno = false;
-            foreach (Llamada item  in c.llamadas)
+            foreach (Llamada item in c.llamadas)
             {
                 if (item == llamada)
                 {
@@ -108,13 +108,19 @@ namespace CentralitaHerencia
         {
             return !(c == llamada);
         }
-        
+
         public static Centralita operator +(Centralita c, Llamada llamada)
         {
+
             if (!(c == llamada))
             {
-                c.AgregarLlamada(llamada);                
+                c.AgregarLlamada(llamada);
             }
+            else
+            {
+                throw new CentralitaException("no sumo", "Centralita", "Public static Centralita Operator");
+            }
+
             return c;
         }
     }

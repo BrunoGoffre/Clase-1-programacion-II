@@ -136,11 +136,27 @@ namespace Central
 
             if (ComboBoxFranjas.Enabled == true)
             {
-                c += new Provincial(textBoxNroOrigen.Text,franja ,numero.Next(1,50),textBoxNroDestino.Text );
+                try
+                {
+                    c += new Provincial(textBoxNroOrigen.Text,franja ,numero.Next(1,50),textBoxNroDestino.Text );
+                }
+                catch (CentralitaException a)
+                {
+                    MessageBox.Show("Llamada ya realizada");
+                    string mensaje = a.Message;
+                }
             }
             else
             {
-                c += new Local(textBoxNroDestino.Text, numero.Next(1, 50), textBoxNroOrigen.Text, (numero.Next(5,56)/10));
+                 try
+                {
+                    c += new Local(textBoxNroDestino.Text, numero.Next(1, 50), textBoxNroOrigen.Text, (numero.Next(5, 56) / 10));
+                }
+                catch (CentralitaException a)
+                {
+                    MessageBox.Show("Llamada ya realizada");
+                    string mensaje = a.Message;
+                }
             }
             
         }
