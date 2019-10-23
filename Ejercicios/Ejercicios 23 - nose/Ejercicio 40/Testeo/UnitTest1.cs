@@ -15,5 +15,14 @@ namespace Testeo
             //Assert
             Assert.IsNotNull(centralita.Llamadas);
         }
+        [TestMethod]
+        [ExpectedException(typeof(CentralitaException))]
+        public void instance()
+        {
+            // new DivideByZeroException();
+            Centralita centralita = new Centralita("Claro");
+            centralita += new Local("111",20,"111",20);
+            centralita += new Local("111", 20, "111", 20);
+        }
     }
 }
