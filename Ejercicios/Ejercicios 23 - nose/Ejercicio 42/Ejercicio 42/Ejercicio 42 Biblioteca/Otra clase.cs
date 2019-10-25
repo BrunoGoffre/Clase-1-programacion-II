@@ -6,19 +6,20 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_42_Biblioteca
 {
-    class Otra_clase
+    public class OtraClase
     {
-        public void Metodo()
+        public static void metodo()
         {
+            int numero = 0;
             try
             {
-
+                MiClase objeto = new MiClase(numero);
             }
-            catch (DivideByZeroException a)
+            catch (DivideByZeroException gato)
             {
-
-                throw;
+                throw new UnaEsepcion("ececion nueva", gato);
             }
+
         }
     }
 }
