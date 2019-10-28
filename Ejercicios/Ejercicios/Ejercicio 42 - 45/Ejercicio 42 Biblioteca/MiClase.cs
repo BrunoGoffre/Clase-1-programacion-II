@@ -10,7 +10,7 @@ namespace Ejercicio_42_Biblioteca
     {
             public int numero;
 
-            public static void MetodoEstatico()
+            public static void StaticMethod()
             {
                 throw new DivideByZeroException("fallo1");
             }
@@ -19,7 +19,7 @@ namespace Ejercicio_42_Biblioteca
             {
                 try
                 {
-                    MiClase.MetodoEstatico();
+                    MiClase.StaticMethod();
                 }
                 catch (DivideByZeroException esepcion)
                 {

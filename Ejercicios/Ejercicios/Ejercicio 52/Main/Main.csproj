@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A73571C7-B7A1-41D5-A1F3-51ADA42DE1A7}</ProjectGuid>
+    <ProjectGuid>{27A6C3A0-60EB-414F-B947-E92215BE4AAB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ejercicio_42</RootNamespace>
-    <AssemblyName>Ejercicio 42</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>Main</RootNamespace>
+    <AssemblyName>Main</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Writters\Writters.csproj">
+      <Project>{78a994e7-39e1-4c7f-890f-e2844f8e244e}</Project>
+      <Name>Writters</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

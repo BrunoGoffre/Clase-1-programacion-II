@@ -17,7 +17,7 @@ namespace Ejercicio_42_Biblioteca
             }
             catch (DivideByZeroException gato)
             {
-                throw new UnaEsepcion("ececion nueva", gato);
+                throw new UnaEsepcion();
             }
 
         }
