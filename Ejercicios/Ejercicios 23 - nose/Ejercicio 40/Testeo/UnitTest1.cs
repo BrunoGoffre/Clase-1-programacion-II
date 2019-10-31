@@ -15,5 +15,12 @@ namespace Testeo
             //Assert
             Assert.IsNotNull(centralita.Llamadas);
         }
+        [TestMethod]
+        public void Instance()
+        {
+            Centralita centralita = new Centralita("Bruno");
+            centralita += new Local("origen",20,"destino",20);
+            Local intento = new Local("origen", 20, "destino", 20);
+        }
     }
 }
