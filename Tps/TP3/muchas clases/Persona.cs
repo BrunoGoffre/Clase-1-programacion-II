@@ -11,33 +11,33 @@ namespace muchas_clases
     {
         string nombre;
         string apellido;
-        eNacionalidad nacionalidad;
+        ENacionalidad nacionalidad;
         int dni;
 
         public Persona()
         {
 
         }
-        public Persona(string nombre, string apellido, eNacionalidad nacionalidad)
+        public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
         {
 
         }
-        public Persona(string nombre, string apellido, int dni, eNacionalidad nacionalidad) : this (nombre,apellido,nacionalidad)
+        public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad) : this (nombre,apellido,nacionalidad)
         {
 
         }
-        public Persona(string nombre, string apellido, string dni, eNacionalidad nacionalidad)
+        public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad)
         {
 
         }
 
-        public int ValidarDni(eNacionalidad nacionalidad,int dato)
+        public int ValidarDni(ENacionalidad nacionalidad,int dato)
         {
-            if (nacionalidad == eNacionalidad.Argentino && dato >= 1 && dato <= 89999999)
+            if (nacionalidad == ENacionalidad.Argentino && dato >= 1 && dato <= 89999999)
             {
                 return dato;
             }
-            else if (nacionalidad == eNacionalidad.Extranjero && dato >= 90000000 && dato <= 99999999)
+            else if (nacionalidad == ENacionalidad.Extranjero && dato >= 90000000 && dato <= 99999999)
             {
                 return dato;
             }
@@ -46,7 +46,7 @@ namespace muchas_clases
                 throw new NacionalidadInvalidaException();
             }
         }
-        public int ValidarDni(eNacionalidad nacionalidad, string dato)
+        public int ValidarDni(ENacionalidad nacionalidad, string dato)
         {
             int dni;
 
@@ -54,7 +54,7 @@ namespace muchas_clases
             {
                 if (int.TryParse(dato, out dni))
                 {
-                    return ValidarDni(nacionalidad, dni);
+                    return ValidarDni(this.nacionalidad, dni);
                 }
                 else
                 {
@@ -68,7 +68,7 @@ namespace muchas_clases
             
         }
 
-        public enum eNacionalidad
+        public enum ENacionalidad
         {
             Argentino,
             Extranjero
