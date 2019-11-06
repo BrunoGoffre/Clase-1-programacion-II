@@ -109,7 +109,6 @@ namespace muchas_clases
             {
                 throw new DniInvalidoException();
             }
-
         }
         public string ValidarNombreApellido(string dato)
         {
@@ -122,7 +121,6 @@ namespace muchas_clases
                 return "";
             }
         }
-
         public override string ToString()
         {
             return $"Nombre: {this.Nombre} Apellido: {this.Apellido} Nacionalidad: {this.Nacionalidad.ToString()} DNI: {this.DNI}";

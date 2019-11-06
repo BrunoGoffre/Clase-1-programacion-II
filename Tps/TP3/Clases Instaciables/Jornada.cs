@@ -12,7 +12,7 @@ namespace Clases_Instaciables
         //Eclases clase;
         //Profesor instructor;
 
-        //public Jornada()
+        //private Jornada()
         //{
         //    this.alumno = new List<Alumnos>();
         //}

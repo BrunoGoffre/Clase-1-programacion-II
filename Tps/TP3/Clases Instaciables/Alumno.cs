@@ -11,7 +11,6 @@ namespace muchas_clases
     {
         Universidad.EClases claseQueToma;
         EEstadoCuenta estadoCuenta;
-
         public Alumno()
         {
 
@@ -40,7 +39,34 @@ namespace muchas_clases
         {
             return $"TOMA CLASE DE {this.claseQueToma}";
         }
-        
+
+        public override string ToString()
+        {
+            return this.MostrarDatos();
+        }
+
+        public static bool operator ==(Alumno a, Universidad.EClases b)
+        {
+            if (a.claseQueToma == b && a.estadoCuenta != EEstadoCuenta.Deudor)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static bool operator !=(Alumno a, Universidad.EClases b)
+        {
+            if (a.claseQueToma != b)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
         public enum EEstadoCuenta
         {

@@ -16,22 +16,37 @@ namespace muchas_clases
         {
             random = new Random();
         }
-        public Profesor()
+        private Profesor()
         {
 
         }
         public Profesor(int id,string nombre,string apellido,string dni, ENacionalidad nacionalidad) : base(id,nombre,apellido, dni, nacionalidad)
         {
-            
+            clasesDelDia = new Queue<Universidad.EClases>();
         }
 
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
+            int i = 0;
+            sb.AppendFormat($"{base.MostrarDatos()}\n");
 
-            sb.AppendFormat($"");
+            foreach (Universidad.EClases item in clasesDelDia)
+            {
+                i++;
+                sb.AppendFormat($"Dia: {i} - {item.ToString()}");
+            }
 
             return sb.ToString();
+        }
+
+        private void _randomClases()
+        {
+
+        }
+        public override string ToString()
+        {
+            return this.MostrarDatos();
         }
     }
 }
