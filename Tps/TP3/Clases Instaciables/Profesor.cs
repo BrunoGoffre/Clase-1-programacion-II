@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Clases_Instaciables;
 
-namespace muchas_clases
+namespace Clases_Instaciables
 {
     public sealed class Profesor : Universitario
     {
@@ -28,21 +28,30 @@ namespace muchas_clases
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
-            int i = 0;
-            sb.AppendFormat($"{base.MostrarDatos()}\n");
 
+            sb.AppendFormat($"{base.MostrarDatos()}\n");
+            sb.AppendFormat(this.ParticiparEnClase());
+
+            return sb.ToString();
+        }
+
+        protected override string ParticiparEnClase()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendFormat($"CLASES DEL DIA:");
             foreach (Universidad.EClases item in clasesDelDia)
             {
-                i++;
-                sb.AppendFormat($"Dia: {i} - {item.ToString()}");
+                sb.AppendFormat(item.ToString());
             }
-
             return sb.ToString();
         }
 
         private void _randomClases()
         {
-
+            this.clasesDelDia.Enqueue((Universidad.EClases)random.Next(0, 3));
+            System.Threading.Thread.Sleep(1000);
+            this.clasesDelDia.Enqueue((Universidad.EClases)random.Next(0, 3));
         }
         public override string ToString()
         {

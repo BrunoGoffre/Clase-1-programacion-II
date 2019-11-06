@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Clases_Instaciables;
 
-namespace muchas_clases
+namespace Clases_Abstractas
 {
     public abstract class Universitario : Persona
     {
