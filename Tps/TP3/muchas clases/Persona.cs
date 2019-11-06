@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Exepciones;
+using System.Text.RegularExpressions;
 
 namespace muchas_clases
 {
@@ -20,54 +21,112 @@ namespace muchas_clases
         }
         public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
         {
-
+            this.Nombre = nombre;
+            this.Apellido = apellido;
+            this.Nacionalidad = nacionalidad;
         }
-        public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad) : this (nombre,apellido,nacionalidad)
+        public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad) : this(nombre, apellido, nacionalidad)
         {
-
+            this.DNI = dni;
         }
         public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad)
         {
-
+            this.StringToDNI = dni;
         }
 
-        public int ValidarDni(ENacionalidad nacionalidad,int dato)
+        public string Nombre
         {
-            if (nacionalidad == ENacionalidad.Argentino && dato >= 1 && dato <= 89999999)
+            get
             {
-                return dato;
+                return this.nombre;
             }
-            else if (nacionalidad == ENacionalidad.Extranjero && dato >= 90000000 && dato <= 99999999)
+            set
             {
-                return dato;
+                this.nombre = ValidarNombreApellido(value);
             }
-            else
+        }
+        public string Apellido
+        {
+            get
             {
-                throw new NacionalidadInvalidaException();
+                return this.apellido;
             }
+            set
+            {
+                this.apellido = ValidarNombreApellido(value);
+            }
+        }
+        public int DNI
+        {
+            get
+            {
+                return this.dni;
+            }
+            set
+            {
+                this.dni = ValidarDni(this.nacionalidad, value);
+            }
+        }
+        public ENacionalidad Nacionalidad
+        {
+            get
+            {
+                return this.nacionalidad;
+            }
+            set
+            {
+                this.nacionalidad = value;
+            }
+        }
+        public string StringToDNI
+        {
+            set
+            {
+                this.dni = ValidarDni(this.nacionalidad, value);
+            }
+        }
+        public int ValidarDni(ENacionalidad nacionalidad, int dato)
+        {
+            return ValidarDni(nacionalidad, dato.ToString());
         }
         public int ValidarDni(ENacionalidad nacionalidad, string dato)
         {
             int dni;
 
-            if (dato.Length < 9)
+            if (dato.Length < 9 && int.TryParse(dato, out dni))
             {
-                if (int.TryParse(dato, out dni))
+                if ((nacionalidad == ENacionalidad.Argentino && dni >= 1 && dni <= 89999999)
+                     || nacionalidad == ENacionalidad.Extranjero && dni >= 90000000 && dni <= 99999999)
                 {
-                    return ValidarDni(this.nacionalidad, dni);
+                    return dni;
                 }
                 else
                 {
-                    throw new DniInvalidoException();
+                    throw new NacionalidadInvalidaException();
                 }
             }
             else
             {
                 throw new DniInvalidoException();
             }
-            
+
+        }
+        public string ValidarNombreApellido(string dato)
+        {
+            if (Regex.IsMatch(dato, "^[a-z A-Z]$"))
+            {
+                return dato;
+            }
+            else
+            {
+                return "";
+            }
         }
 
+        public override string ToString()
+        {
+            return $"Nombre: {this.Nombre} Apellido: {this.Apellido} Nacionalidad: {this.Nacionalidad.ToString()} DNI: {this.DNI}";
+        }
         public enum ENacionalidad
         {
             Argentino,
@@ -75,3 +134,4 @@ namespace muchas_clases
         }
     }
 }
+

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Clases_Instaciables;
 
 namespace muchas_clases
 {
@@ -29,7 +30,7 @@ namespace muchas_clases
             return sb.ToString();
         }
 
-        protected abstract  string ParticiparEnClase();
+        protected abstract string ParticiparEnClase();
 
         public static bool operator ==(Universitario a, Universitario b)
         {

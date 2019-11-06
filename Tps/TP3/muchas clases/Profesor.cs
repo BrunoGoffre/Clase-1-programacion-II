@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Clases_Instaciables;
 
 namespace muchas_clases
 {
-    class Profesor : Universitario
+    public sealed class Profesor : Universitario
     {
-        //Queue<EClases> clasesDelDia;
+        Queue<Universidad.EClases> clasesDelDia;
         static Random random;
 
         static Profesor()
@@ -29,6 +30,8 @@ namespace muchas_clases
             StringBuilder sb = new StringBuilder();
 
             sb.AppendFormat($"");
+
+            return sb.ToString();
         }
     }
 }
