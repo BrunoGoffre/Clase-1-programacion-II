@@ -14,7 +14,7 @@ namespace Proyecto
             Persona persona2;
             
             Persona.Guardar(persona);
-            persona2 = Persona.Read("nombre.xml");
+            persona2 = Persona.Read(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\xml");
 
             Console.WriteLine(persona2);
 

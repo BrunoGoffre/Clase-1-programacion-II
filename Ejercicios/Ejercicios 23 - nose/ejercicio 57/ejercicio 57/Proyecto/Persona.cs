@@ -9,10 +9,11 @@ using System.IO;
 
 namespace Proyecto
 {
+    [Serializable]
     public class Persona
     {
-        string nombre;
-        string apellido;
+        public string nombre;
+        public string apellido;
         
         public Persona()
         {
@@ -25,10 +26,11 @@ namespace Proyecto
         }
         public static void Guardar(Persona persona)
         {
-            XmlTextWriter writer = new XmlTextWriter(Environment.SpecialFolder.Desktop.ToString(), Encoding.UTF8);
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\xml";
+             
+            XmlTextWriter writer = new XmlTextWriter(path, null);
             XmlSerializer ser = new XmlSerializer(typeof(Persona));
-
-            ser.Serialize(writer,persona);
+            ser.Serialize(writer, persona);
 
             writer.Close();
         }
