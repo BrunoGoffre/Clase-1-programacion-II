@@ -99,7 +99,7 @@ namespace Clases_Instaciables
         }
         public override string ToString()
         {
-            return Leer();
+            return this.Leer();
         }
     }
 }

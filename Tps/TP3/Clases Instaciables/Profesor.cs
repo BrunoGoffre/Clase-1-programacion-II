@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Clases_Instaciables;
+using Clases_Abstractas;
 
 namespace Clases_Instaciables
 {
@@ -23,6 +23,7 @@ namespace Clases_Instaciables
         public Profesor(int id,string nombre,string apellido,string dni, ENacionalidad nacionalidad) : base(id,nombre,apellido, dni, nacionalidad)
         {
             clasesDelDia = new Queue<Universidad.EClases>();
+            _randomClases();
         }
 
         protected override string MostrarDatos()
@@ -52,6 +53,22 @@ namespace Clases_Instaciables
             this.clasesDelDia.Enqueue((Universidad.EClases)random.Next(0, 3));
             System.Threading.Thread.Sleep(1000);
             this.clasesDelDia.Enqueue((Universidad.EClases)random.Next(0, 3));
+        }
+
+        public static bool operator ==(Profesor i, Universidad.EClases clase)
+        {
+            if (i.clasesDelDia.Contains(clase))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static bool operator !=(Profesor i, Universidad.EClases clase)
+        {
+            return !(i == clase);
         }
         public override string ToString()
         {
