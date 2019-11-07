@@ -47,5 +47,16 @@ namespace Clases_Abstractas
         {
             return !(a == b);
         }
+        public override bool Equals(object obj)
+        {
+            if (this.GetType() == obj.GetType() && (this == (Universitario)obj))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

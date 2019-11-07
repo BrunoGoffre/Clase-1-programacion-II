@@ -57,14 +57,14 @@ namespace Clases_Instaciables
 
         public static bool operator ==(Profesor i, Universidad.EClases clase)
         {
-            if (i.clasesDelDia.Contains(clase))
+            foreach (Universidad.EClases item in i.clasesDelDia)
             {
-                return true;
+                if (item == clase)
+                {
+                    return true;
+                }
             }
-            else
-            {
-                return false;
-            }
+            return false;
         }
         public static bool operator !=(Profesor i, Universidad.EClases clase)
         {

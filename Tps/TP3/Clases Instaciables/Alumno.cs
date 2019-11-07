@@ -11,6 +11,7 @@ namespace Clases_Instaciables
     {
         Universidad.EClases claseQueToma;
         EEstadoCuenta estadoCuenta;
+
         public Alumno()
         {
 

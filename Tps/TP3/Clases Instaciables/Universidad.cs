@@ -76,14 +76,14 @@ namespace Clases_Instaciables
 
         public static bool operator ==(Universidad g, Alumno a)
         {
-            if (g.alumnos.Contains(a))
+            foreach  ( Alumno item in g.Alumnos)
             {
-                return true;
+               if (item.Equals(a))
+                {
+                    return true;
+                }
             }
-            else
-            {
-                return false;
-            }
+            return false;
         }
         public static bool operator !=(Universidad g, Alumno a)
         {
@@ -91,14 +91,14 @@ namespace Clases_Instaciables
         }
         public static bool operator ==(Universidad g, Profesor i)
         {
-            if (g.Profesores.Contains(i))
+            foreach (Profesor item in g.Profesores)
             {
-                return true;
+                if (item.Equals(i))
+                {
+                    return true;
+                }
             }
-            else
-            {
                 return false;
-            }
         }
         public static bool operator !=(Universidad g, Profesor i)
         {
@@ -119,24 +119,23 @@ namespace Clases_Instaciables
         {
             foreach (Profesor item in u.Profesores)
             {
-                if (item == clase)
-                {
-                    continue;
-                }
-                else
+                if (item != clase)
                 {
                     return item;
                 }
-                //que devuelvo en caso de que no encuentre.
             }
+            return null;
         }
         public static Universidad operator +(Universidad u, Profesor i)
         {
-            if (!(u.Profesores.Contains(i)))
+            foreach (Profesor item in u.profesores)
             {
-                u.Profesores.Add(i);
+                if (item != i)
+                {
+                    u.Profesores.Add(i);
+                }
             }
-            return u;
+                return u;
         }
         public static Universidad operator +(Universidad u, Alumno a)
         {
@@ -150,18 +149,30 @@ namespace Clases_Instaciables
             }
             return u;
         }
-        //public static Universidad operator +(Universidad g, EClases clase)
-        //{
-        //    foreach (Profesor item in g.Profesores)
-        //    {
-        //        if (item == clase)
-        //        {
-        //            g.jornada.Add(new Jornada(clase, item));
-        //        }
-        //    }
-        //    //De donde saco los alumnos para agregar a la lista;
-        //    return g;
-        //}
+        public static Universidad operator +(Universidad g, EClases clase)
+        {
+            Jornada j = null;
+            foreach (Profesor item in g.Profesores)
+            {
+                if (item == clase)
+                {
+                    j = new Jornada(clase, item);
+                    break;
+                }
+            }
+            if (j != null)
+            {
+                foreach (Alumno item in g.alumnos)
+                {
+                    if (item == clase)
+                    {
+                        j += item;
+                    }
+                }
+                g.jornada.Add(j);
+            }
+            return g;
+        }
         #endregion
 
         #region Metodos

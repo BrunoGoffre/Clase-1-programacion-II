@@ -72,14 +72,7 @@ namespace Clases_Instaciables
         }
         public static bool operator ==(Jornada a, Alumno b)
         {
-            if (a.alumnos.Contains(b))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return b == a.clase;
         }
         public static bool operator !=(Jornada a, Alumno b)
         {
@@ -87,15 +80,11 @@ namespace Clases_Instaciables
         }
         public static Jornada operator +(Jornada a, Alumno b)
         {
-            if (a == b)
+            if (a != b)
             {
                 a.alumnos.Add(b);
-                return a;
             }
-            else
-            {
-                return a;
-            }
+            return a;
         }
         public override string ToString()
         {
