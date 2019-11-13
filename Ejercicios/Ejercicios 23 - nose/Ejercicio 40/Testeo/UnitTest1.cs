@@ -22,5 +22,11 @@ namespace Testeo
             centralita += new Local("origen",20,"destino",20);
             Local intento = new Local("origen", 20, "destino", 20);
         }
+
+        [TestMethod]
+        public void ValidacionNumerica()
+        {
+
+        }
     }
 }
