@@ -31,7 +31,7 @@ namespace ejercicio_67
             if (this.label1.InvokeRequired)
             {
                 EncargadoTiempo d = new EncargadoTiempo(this.AsignarHora);
-                this.Invoke(d);
+                this.label1.Invoke(d);
             }
             else
             {
