@@ -24,7 +24,7 @@ namespace Negocio
             foreach (string item in filaClientes)
             {
                 
-                Console.WriteLine(Thread.CurrentThread.Name + " = " + item);
+                Console.WriteLine(Thread.CurrentThread.Name  + " = " + item);
                 System.Threading.Thread.Sleep(2000);
             }
         }
