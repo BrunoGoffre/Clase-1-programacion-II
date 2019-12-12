@@ -5,56 +5,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
+using System.IO;
 
 namespace Archivo
 {
     public class Xml<T> : IFiles<T>
     {
-        public string GetDirectoritPath
+        public string GetDirectoryPath
         {
             get
             {
-                string escritorio = $"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}\\";
-                return escritorio;
+                return Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             }
         }
 
         public bool FileExists(string nombrearchivo)
         {
-            try
-            {
-                string archivo = $"{GetDirectoritPath}\\{nombrearchivo}";
-                new XmlTextReader(archivo);
-                return true;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
+            return File.Exists(this.Path(nombrearchivo));
         }
         public void Guardar(string nombrearchivo, T objeto)
         {
-            XmlTextWriter writer = null;
-            XmlSerializer ser;
-
-            try
-            {
-                writer = new XmlTextWriter(nombrearchivo, Encoding.UTF8);
-                ser = new XmlSerializer(typeof(T));
-                ser.Serialize(writer, objeto);
-            }
-            catch (Exception ex)
-            {
-                throw new ErrorArchivoException("No se encontro el archivo", ex);
-            }
-            finally
-            {
-                if (!(writer is null))
-                {
-                    writer.Close();
-                }
-            }
-
+            this.Guardar(nombrearchivo,objeto,Encoding.UTF8);
         }
         public void Guardar(string nombrearchivo, T objeto, Encoding encoding)
         {
@@ -63,13 +34,13 @@ namespace Archivo
 
             try
             {
-                writer = new XmlTextWriter(nombrearchivo, encoding);
+                writer = new XmlTextWriter(this.Path(nombrearchivo), encoding);
                 ser = new XmlSerializer(typeof(T));
                 ser.Serialize(writer, objeto);
             }
             catch (Exception ex)
             {
-                throw new ErrorArchivoException("No se encontro el archivo", ex);
+                throw new ErrorArchivoException(ex.Message, ex);
             }
             finally
             {
@@ -81,12 +52,16 @@ namespace Archivo
         }
         public bool Leer(string nombrearchivo, out T objeto)
         {
+            return this.Leer(nombrearchivo, out objeto, Encoding.UTF8);
+        }
+        public bool Leer(string nombrearchivo, out T objeto, Encoding encoding)
+        {
             XmlTextReader reader = null;
             XmlSerializer ser;
 
             try
             {
-                reader = new XmlTextReader(nombrearchivo);
+                reader = new XmlTextReader(this.Path(nombrearchivo) + nombrearchivo);
                 ser = new XmlSerializer(typeof(T));
                 objeto = (T)ser.Deserialize(reader);
                 return true;
@@ -103,29 +78,10 @@ namespace Archivo
                 }
             }
         }
-        public bool Leer(string nombrearchivo, out T objeto, Encoding encoding)
+        public string Path(string nombreArchivo)
         {
-            XmlTextReader reader = null;
-            XmlSerializer ser;
-
-            try
-            {
-                reader = new XmlTextReader(nombrearchivo);
-                ser = new XmlSerializer(typeof(T));
-                objeto = (T)ser.Deserialize(reader);
-                return true;
-            }
-            catch (Exception ex)
-            {
-                throw new ErrorArchivoException("No se encontro el archivo", ex);
-            }
-            finally
-            {
-                if (!(reader is null))
-                {
-                    reader.Close();
-                }
-            }
+            string path = $"{this.GetDirectoryPath}\\c{nombreArchivo}";
+            return path;
         }
     }
 }

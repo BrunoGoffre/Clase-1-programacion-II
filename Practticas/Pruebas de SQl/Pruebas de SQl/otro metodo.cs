@@ -4,21 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _20191121_SP
+namespace Pruebas_de_SQl
 {
-    public static class MetodoDeExtension
+    public static class otro_metodo
     {
-        public static string EstadoSimulacion(this bool valor)
+        public static String EstadoSimulacion(this bool valor)
         {
             if (valor)
             {
-                return "Orbitando";
+                return "orbitando";
             }
-            else 
+            else
             {
                 return "Detenido";
             }
         }
-
     }
 }

@@ -51,10 +51,6 @@ namespace _20191121_SP
                 this.Controls.Add(pic);
             }
         }
-
-
-
-
         private void InitializePlanets()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSistemaSolar));
@@ -127,6 +123,7 @@ namespace _20191121_SP
 
         private void btnSimular_Click(object sender, EventArgs e)
         {
+            bool estado;
             if (this.animaciones.Count == 0)
             {
                 foreach (Planeta item in this.planetas)
@@ -136,11 +133,15 @@ namespace _20191121_SP
                     hilo.Start();
                 }
                 this.btnSimular.Text = "Detener";
+                estado = true;
+                this.Text = estado.EstadoSimulacion();
             }
             else
             {
                 this.LimpiarAnimaciones();
                 this.btnSimular.Text = "Simular";
+                estado = false;
+                this.Text = estado.EstadoSimulacion();
             }
         }
 
@@ -176,7 +177,7 @@ namespace _20191121_SP
             if (pic.InvokeRequired)
             {
                 CallBack d = new CallBack(DibujarAvancePlaneta);
-                object[] objs = new object[] { pic.Location = this.CalcularUbicacion(pic.Location, e.Avance, e.RadioRespectoSol)};
+                object[] objs = new object[] { sender,e};
                 this.Invoke(d, objs);
             }
             else
